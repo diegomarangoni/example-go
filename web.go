@@ -28,7 +28,7 @@ func poweredByHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	powered := os.Getenv("POWERED_BY")
 	if powered == "" {
-		powered = "Deis"
+		powered = "Teste!"
 	}
 	// print the string to the ResponseWriter
 	hostname, _ := os.Hostname()
